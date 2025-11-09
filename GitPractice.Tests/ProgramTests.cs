@@ -1,19 +1,14 @@
-﻿using xUnit;
+﻿using Xunit; 
 
-namespace GitPractice.Tests;
-
-[TestFixture]
 public class ProgramTests
 {
-    [Test]
-    public void Greet_ReturnsCorrectMessage()
+    [Fact] 
+    public void Greet_ReturnsExpectedString()
     {
-        // act
-        var result = typeof(Program)
-            .GetMethod("Greet", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static)
-            .Invoke(null, null);
+        // Act
+        var result = Program.Greet();
 
-        // assert
-        Assert.AreEqual("Привет, Git!", result);
+        // Assert
+        Assert.Equal("Привет, Git!", result);
     }
 }
