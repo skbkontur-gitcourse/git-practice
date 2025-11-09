@@ -39,7 +39,7 @@ jobs:
 
       # 7. Сохраняем сборку как артефакт
       - name: Upload build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: GitPracticeApp-build
           path: ./publish
