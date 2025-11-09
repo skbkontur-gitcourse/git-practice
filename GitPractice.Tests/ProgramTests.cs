@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+﻿using xUnit;
 
 namespace GitPractice.Tests;
 
