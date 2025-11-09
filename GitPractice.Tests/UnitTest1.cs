@@ -1,4 +1,6 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
+
+namespace GitPractice.Tests;
 
 [TestFixture]
 public class ProgramTests
