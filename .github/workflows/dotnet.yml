@@ -2,20 +2,24 @@ name: .NET CI
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - "*"      # запускает CI при пуше в любую ветку
   pull_request:
-    branches: [ main ]
+    branches:
+      - "*"      # запускает CI для любого PR
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: 8.0.x   # или 7.0.x, если у тебя проект на .NET 7
 
       - name: Restore dependencies
         run: dotnet restore
