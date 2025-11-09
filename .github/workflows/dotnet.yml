@@ -1,28 +1,45 @@
-name: .NET CI
+name: .NET CI/CD
 
 on:
   push:
-    branches: [ "*" ]
+    branches: ["*"]      # запуск на всех ветках
   pull_request:
-    branches: [ "*" ]
+    branches: ["*"]      # запуск на всех PR
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      # 1. Получаем код из репозитория
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
+      # 2. Настраиваем .NET SDK
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
 
+      # 3. Восстанавливаем зависимости
       - name: Restore dependencies
         run: dotnet restore
 
+      # 4. Сборка проекта
       - name: Build
         run: dotnet build --no-restore
 
+      # 5. Запуск тестов
       - name: Run tests
         run: dotnet test --no-build --verbosity normal
+
+      # 6. Если тесты прошли, делаем publish
+      - name: Publish app
+        run: dotnet publish GitPracticeApp/GitPracticeApp.csproj -c Release -o ./publish
+
+      # 7. Сохраняем сборку как артефакт
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: GitPracticeApp-build
+          path: ./publish
