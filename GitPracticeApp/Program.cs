@@ -1,13 +1,13 @@
 ﻿using System;
 
-class Program
+public class Program
 {
-    static void Main()
+    public static void Main()
     {
         Console.WriteLine(Greet());
     }
 
-    static string Greet()
+    public static string Greet()
     {
         return "Привет, Git!";
     }
