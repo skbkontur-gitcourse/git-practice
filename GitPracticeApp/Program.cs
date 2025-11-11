@@ -9,6 +9,6 @@ public class Program
 
     public static string Greet()
     {
-        return "Привет, Git! от преподавателя трунь";
+        return "Привет, Git!";
     }
 }
