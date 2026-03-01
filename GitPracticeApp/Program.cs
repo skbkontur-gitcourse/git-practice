@@ -7,8 +7,8 @@ public class Program
         Console.WriteLine(Greet());
     }
 
-    public static string Greet()
-    {
-        return "Привет от преподавателя!";
-    }
+   {
+    return «Любимое число";
+} 
+
 }
