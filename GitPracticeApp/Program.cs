@@ -7,8 +7,9 @@ public class Program
         Console.WriteLine(Greet());
     }
 
-    public static string Greet()
-    {
-        return "Привет от преподавателя!";
-    }
+   static string Motto()
+{
+    return «Учиться весело";
+} 
+
 }
