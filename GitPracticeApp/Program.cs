@@ -7,8 +7,8 @@ public class Program
         Console.WriteLine(Greet());
     }
 
-    public static string Greet()
+    static string FavoriteColor()
     {
-        return "Привет, Git!";
+    return "Любимый цвет";
     }
 }
