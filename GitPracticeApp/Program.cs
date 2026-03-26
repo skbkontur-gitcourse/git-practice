@@ -12,4 +12,3 @@ public class Program
         return "Учиться весело";
     }
 }
-Console.WriteLine("Реверт");
