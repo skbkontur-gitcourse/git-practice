@@ -411,6 +411,16 @@
         "build": {
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "GitPracticeApp/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/GitPracticeApp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitPracticeApp.dll": {}
+        }
       }
     }
   },
@@ -932,10 +942,16 @@
         "xunit.runner.visualstudio.2.8.2.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "GitPracticeApp/1.0.0": {
+      "type": "project",
+      "path": "../GitPracticeApp/GitPracticeApp.csproj",
+      "msbuildProject": "../GitPracticeApp/GitPracticeApp.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "GitPracticeApp >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "coverlet.collector >= 6.0.2",
       "xunit >= 2.9.2",
@@ -943,31 +959,41 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rakhimova\\.nuget\\packages\\": {}
+    "C:\\Users\\Денис\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rakhimova\\Desktop\\git-practice\\GitPractice.Tests\\GitPractice.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Денис\\git-practice\\GitPractice.Tests\\GitPractice.Tests.csproj",
       "projectName": "GitPractice.Tests",
-      "projectPath": "C:\\Users\\rakhimova\\Desktop\\git-practice\\GitPractice.Tests\\GitPractice.Tests.csproj",
-      "packagesPath": "C:\\Users\\rakhimova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rakhimova\\Desktop\\git-practice\\GitPractice.Tests\\obj\\",
+      "projectPath": "C:\\Users\\Денис\\git-practice\\GitPractice.Tests\\GitPractice.Tests.csproj",
+      "packagesPath": "C:\\Users\\Денис\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Денис\\git-practice\\GitPractice.Tests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\rakhimova\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Денис\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nexus.kontur.host/repository/nuget/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Денис\\git-practice\\GitPracticeApp\\GitPracticeApp.csproj": {
+              "projectPath": "C:\\Users\\Денис\\git-practice\\GitPracticeApp\\GitPracticeApp.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -980,7 +1006,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -1019,7 +1045,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.110/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
