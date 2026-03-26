@@ -9,7 +9,6 @@ public class Program
 
     static string Motto()
 	{
-		Console.WriteLine(“Реверт");
 		return «Учиться весело";
 	}
 }
