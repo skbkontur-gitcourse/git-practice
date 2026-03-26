@@ -9,8 +9,6 @@ public class ProgramTests
         var result = Program.Greet();
 
         // Assert
-       Console.WriteLine("Запуск приложения...");
-Assert.Equal("Добро пожаловать в GitPractice!", result);
-
+        Assert.Equal("Привет, Git!", result);
     }
 }
