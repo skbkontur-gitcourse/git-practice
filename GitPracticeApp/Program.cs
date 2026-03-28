@@ -4,10 +4,10 @@ public class Program
 {
     public static void Main()
     {
-        Console.WriteLine(Greet());
+        Console.WriteLine(Motto());
     }
 
-    public static string Greet()
+    public static string Motto()
     {
         return "Привет, Git от преподавателя!";
     }
