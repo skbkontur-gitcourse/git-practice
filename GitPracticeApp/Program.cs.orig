@@ -1,0 +1,20 @@
+﻿using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        Console.WriteLine(Greet());
+    }
+
+<<<<<<< HEAD
+    static string FavoriteColor()
+    {
+        return «Любимый цвет»;
+=======
+    static string Motto()
+    {
+        return «Учиться весело";
+>>>>>>> Khamitova_1
+    }
+}
