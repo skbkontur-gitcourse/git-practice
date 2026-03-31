@@ -2,8 +2,9 @@
 
 public class ProgramTests
 {
-	 static string FavoriteColor()
+    [Fact] 
+    static string Motto()
 {
-    return «Любимый цвет»;
+    return «Учиться весело";
 }
 }
