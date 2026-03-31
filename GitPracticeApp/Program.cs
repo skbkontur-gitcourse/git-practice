@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 
 public class Program
 {
@@ -6,8 +6,8 @@ public class Program
     {
         Console.WriteLine(Greet());
     }
-    static string FavoriteColor()
+    static string Motto()
     {
-        return "Любимый цвет";
+    return "Учиться весело";
     }
 }
