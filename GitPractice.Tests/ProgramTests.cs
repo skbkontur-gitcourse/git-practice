@@ -6,7 +6,7 @@ public class ProgramTests
     public void Greet_ReturnsExpectedString()
     {
         // Act
-        var result = Program.Greet();
+        var result = Program.FavoriteColor();
 
         // Assert
         Assert.Equal("Привет, Git!", result);
