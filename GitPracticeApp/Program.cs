@@ -4,7 +4,7 @@ public class Program
 {
     public static void Main()
     {
-        Console.WriteLine(Greet());
+        Console.WriteLine(Motto());
     }
 
     static string Motto()
