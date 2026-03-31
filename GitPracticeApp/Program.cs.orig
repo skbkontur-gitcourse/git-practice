@@ -7,8 +7,14 @@ public class Program
         Console.WriteLine(Greet());
     }
 
+<<<<<<< HEAD
 	static string Motto()
 	{
     		return «Учиться весело";
+=======
+	static string FavoriteColor()
+	{
+		return «Любимый цвет»;
+>>>>>>> Vorontsov_2
 	}
 }
