@@ -4,11 +4,11 @@ public class Program
 {
     public static void Main()
     {
-        Console.WriteLine(FavoriteColor());
+        Console.WriteLine(Motto());
     }
 
-    static string FavoriteColor()
+    static string Motto()
     {
-        return "Любимый цвет";
+        return "Учиться весело";
     }
 }
