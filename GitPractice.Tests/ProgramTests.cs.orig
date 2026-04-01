@@ -1,0 +1,17 @@
+﻿using Xunit; 
+
+public class ProgramTests
+{
+    [Fact] 
+<<<<<<< HEAD
+  static string FavoriteColor()
+  {
+    return «Любимый цвет»;
+  }
+=======
+    static string Motto()
+{
+    return «Учиться весело";
+}
+>>>>>>> khаmidulin-1
+}
