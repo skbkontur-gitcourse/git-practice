@@ -6,5 +6,6 @@ public class ProgramTests
     static string Motto()
 {
     return «Учиться весело";
+    Console.WriteLine(“Реверт");
 }
 }
