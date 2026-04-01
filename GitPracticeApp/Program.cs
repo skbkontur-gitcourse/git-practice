@@ -6,9 +6,9 @@ public class Program
     {
         Console.WriteLine(Greet());
     }
-
-      static string FavoriteColor()
-{
-    return "Любимый цвет";
-}
+    
+    static string Motto()
+    {
+        return "Учиться весело";
+    }
 }
